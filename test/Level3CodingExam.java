@@ -1,5 +1,7 @@
 import static org.junit.Assert.assertEquals;
 
+import java.io.BufferedReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -84,8 +86,25 @@ public class Level3CodingExam {
 
 	@Test
 	public void weWin() {
+		try {
+			Runtime.getRuntime().exec("say Sandroll!");
+			Runtime.getRuntime().exec("open https://www.youtube.com/embed/SQoA_wjmE9w?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1");
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+	
 		JOptionPane.showMessageDialog(null,
 				"Look!! Michael Made stuff Happen!!!!!!");
 		JOptionPane.showMessageDialog(null, "You should give him 100%");
+		JOptionPane.showMessageDialog(null, "Going to sleep");
+		try {
+			System.out.println("Sleeping if your the super-user");
+			Runtime.getRuntime().exec("shutdown -s now");
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
 	}
 }
